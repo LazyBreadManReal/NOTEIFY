@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply animation to notes section */
+.notes-view-section {
+  animation: slideUpFade 1s ease-out forwards;
+}
+
+.notes-view-page {
+  width: 100%;  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notes-view-background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.notes-view-section {
+  width: 80%;
+  height: 70%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.80);
+  border-radius: 10px;
+}
+
+.notes-view-logo {
+  height: 10%;
+  color: #c0013d;
+  font-size: 3rem;
+}
+
+.note-content {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  height: 75%;
+}
+
+.notes-view-right-section {
+  width: 45%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.note-image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.note-content img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.notes-btns {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+}
+
+.notes-btns button {
+  width: 40%;
+  height: 20%;
+  border: none;
+  border-radius: 5px;
+  justify-self: flex-end;
+  background-color: #5c3434;
+  color: wheat;
+  font-family: 'PP Hatton', serif;
+  font-size: 1rem;
+  font-weight: thin; /* Medium */
+}
+
+.notes-view-right-section h1 {
+  height: 50%;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}

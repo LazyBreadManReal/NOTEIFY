@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "../css/LoginPage.css";
+import "../css/ProfilePage.css";
 
-function LogoutPage() {
+function ProfilePage() {
   const [name, setName] = useState("");
 
   useEffect(() => {
@@ -34,20 +34,16 @@ function LogoutPage() {
     };
 
     return (
-        <div className="login-page">
-            <img src="src/assets/images/archival_bg.jpg" alt="" className="login-page-background"/>
-            <div className="login-page-background-gradient"></div>
-            <div className="bubble-container">
-                <div className="bubble">
-                    <div className="login-section">
-                        <h1>Hello, {name}!</h1>
-                        <p>You are logged in.</p>
-                        <button className="logout-btn" onClick={handleLogout}>Logout</button>
-                    </div>
-                </div>
-            </div>
+      <div className="profile-page">
+        <img src="src/assets/images/backgrounds/home-page.png" alt="" className="profile-background" />
+        <div className="profile-section">
+          <a href="http://localhost:5173/"className="profile-logo">Noteify</a>
+          <h1>Hello, {name}!</h1>
+          <p>You are logged in.</p>
+          <button className="logout-btn" onClick={handleLogout}>Logout</button>
         </div>
+    </div>
     );
 }
 
-export default LogoutPage;
+export default ProfilePage;

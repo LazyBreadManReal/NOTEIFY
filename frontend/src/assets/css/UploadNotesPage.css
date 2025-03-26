@@ -2,13 +2,18 @@
   margin: 0;
   padding: 0;
 }
-
-/* Apply animation to login section */
-.signup-section {
-  animation: slideUpFade 0.8s ease-out forwards;
+/* Apply animation to notes section */
+.upload-note-section {
+  animation: slideUpFade 1s ease-out forwards;
 }
 
-.signup-page {
+/* Apply animation to notes cards (staggered effect) */
+.upload-note-section form {
+  animation: scaleIn 0.5s ease-out forwards;
+  transform-origin: center;
+}
+
+.upload-note-page {
   width: 100%;  
   height: 100vh;
   display: flex;
@@ -16,15 +21,15 @@
   align-items: center;
 }
 
-.signup-background {
+.upload-note-background {
   position: fixed;
   width: 100%;
   height: 100vh;
   z-index: -1;
 }
 
-.signup-section {
-  width: 30%;
+.upload-note-section {
+  width: 50%;
   height: 70%;
   padding: 2%;
   display: flex;
@@ -35,33 +40,26 @@
   border-radius: 10px;
 }
 
-.signup-logo {
+.upload-note-logo {
   height: 10%;
-  padding: 2%;
   color: #c0013d;
   font-size: 3rem;
 }
 
-.signup-section p, .signup-section h1 {
+.upload-note-section h2 {
   height: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 2.5rem;
 }
 
-.socials-icons {
-  width: 80%;
+.upload-note-section p {
   height: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  margin-top: 5%;
+  font-size: 2rem;
 }
 
-.signup-section form {
+.upload-note-section form {
   width: 80%;
-  height: 80%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,7 +67,7 @@
   gap: 2%;
 }
 
-.signup-section input {
+.upload-note-section input {
   width: 90%;
   height: 10%;
   padding: 10px;
@@ -81,7 +79,7 @@
   opacity: 0.7;
 }
 
-.signup-section button {
+.upload-note-section button {
   width: 90%;
   height: 20%;
   border: none;
@@ -91,18 +89,4 @@
   font-family: 'PP Hatton', serif;
   font-size: 2rem;
   font-weight: thin; /* Medium */
-}
-
-.divert {
-  height: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.message {
-  height: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
