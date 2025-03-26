@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* Apply animation to notes section */
+.upload-note-section {
+  animation: slideUpFade 1s ease-out forwards;
+}
+
+/* Apply animation to notes cards (staggered effect) */
+.upload-note-section form {
+  animation: scaleIn 0.5s ease-out forwards;
+  transform-origin: center;
+}
+
+.upload-note-page {
+  width: 100%;  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-note-background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.upload-note-section {
+  width: 50%;
+  height: 70%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.80);
+  border-radius: 10px;
+}
+
+.upload-note-logo {
+  height: 10%;
+  color: #c0013d;
+  font-size: 3rem;
+}
+
+.upload-note-section h2 {
+  height: 10%;
+  font-size: 2.5rem;
+}
+
+.upload-note-section p {
+  height: 10%;
+  margin-top: 5%;
+  font-size: 2rem;
+}
+
+.upload-note-section form {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.upload-note-section input {
+  width: 90%;
+  height: 10%;
+  padding: 10px;
+  border: 2px dashed rgba(255, 0, 0, 0.5); /* Dotted red border */
+  border-radius: 5px;
+  font-family: 'PP Hatton', serif;
+  font-size: 1rem;
+  font-weight: thin; /* Medium */
+  opacity: 0.7;
+}
+
+.upload-note-section button {
+  width: 90%;
+  height: 20%;
+  border: none;
+  border-radius: 5px;
+  background-color: #5c3434;
+  color: #e7f5c8;
+  font-family: 'PP Hatton', serif;
+  font-size: 2rem;
+  font-weight: thin; /* Medium */
+}
