@@ -42,15 +42,15 @@ function LoginPage() {
 
   return (
     <div className="login-page">
-      <img src="src/assets/images/backgrounds/home-page.png" alt="" className="login-background" />
+      <img src="/images/backgrounds/home-page.png" alt="" className="login-background" />
       <div className="login-section">
         <a href="http://localhost:5173/"className="login-logo">Noteify</a>
         <h1>Login to Your Account</h1>
         <p>Login using social networks</p>
         <div className="socials-icons">
-                <img src="src/assets/images/icons/google-black.png" alt="" />
-                <img src="src/assets/images/icons/facebook-black.png" alt="" />
-                <img src="src/assets/images/icons/instagram-black.png" alt="" />
+                <img src="/images/icons/google-black.png" alt="" />
+                <img src="/images/icons/facebook-black.png" alt="" />
+                <img src="/images/icons/instagram-black.png" alt="" />
         </div>
         <form id="login-form" onSubmit={handleSubmit}>
             <input type="email" placeholder="Email" id="email" onChange={(e) => setEmail(e.target.value)} required />

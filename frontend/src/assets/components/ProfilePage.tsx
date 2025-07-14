@@ -35,7 +35,7 @@ function ProfilePage() {
 
     return (
       <div className="profile-page">
-        <img src="src/assets/images/backgrounds/home-page.png" alt="" className="profile-background" />
+        <img src="/images/backgrounds/home-page.png" alt="" className="profile-background" />
         <div className="profile-section">
           <a href="http://localhost:5173/"className="profile-logo">Noteify</a>
           <h1>Hello, {name}!</h1>

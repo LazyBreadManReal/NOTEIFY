@@ -57,7 +57,7 @@ function Notes() {
 
   return (
     <div className="notes-page">
-        <img src="../src/assets/images/backgrounds/search.png" alt="" className="notes-background" />
+        <img src="..//images/backgrounds/search.png" alt="" className="notes-background" />
         <div className="notes-section">
             <a href="http://localhost:5173/"className="login-logo">Noteify</a>
             <div className="notes-search-section">

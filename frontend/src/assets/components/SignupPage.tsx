@@ -40,7 +40,7 @@ function SignupPage() {
   };
   return (
     <div className="signup-page">
-      <img src="src/assets/images/backgrounds/home-page.png" alt="" className="login-background" />
+      <img src="/images/backgrounds/home-page.png" alt="" className="login-background" />
       <div className="signup-section">
         <a href="http://localhost:5173/"className="login-logo">Noteify</a>
         <h1>Create an Account</h1>

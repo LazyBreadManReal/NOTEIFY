@@ -60,7 +60,7 @@ const UploadNotesPage = () => {
 
   return (
     <div className="upload-note-page">
-      <img src="../src/assets/images/backgrounds/featured.png" alt="" className="upload-note-background" />
+      <img src="..//images/backgrounds/featured.png" alt="" className="upload-note-background" />
       <div className="upload-note-section">
         <a href="http://localhost:5173/"className="upload-note-logo">Noteify</a>
         <h2>Upload Image</h2>

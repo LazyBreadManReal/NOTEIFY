@@ -54,7 +54,7 @@ function NotesView() {
 
   return (
     <div className="notes-view-page">
-        <img src="../../src/assets/images/backgrounds/search.png" alt="" className="notes-view-background" />
+        <img src="../..//images/backgrounds/search.png" alt="" className="notes-view-background" />
         <div className="notes-view-section">
             <a href="http://localhost:5173/"className="login-logo">Noteify</a>
             {notes.length === 0 ? (
