@@ -49,9 +49,13 @@ SECRET_KEY=your-very-secret-key
 
 ### 4. Run the Application
 
-#### Then go to your terminal and run:
+### Go back to your terminal, if your terminal is not at root directory do:
 ```bash
 cd ..
+```
+
+#### Run This to launch the website:
+```bash
 npm run dev
 ```
 
