@@ -74,13 +74,13 @@ function verifyToken(req, res, next) {
 
   if (!authHeader) return res.status(401).json({ error: "No token provided" });
 
-  const token = authHeader.split(" ")[1]; // Extract token from "Bearer <TOKEN>"
+  const token = authHeader.split(" ")[1]; 
 
   if (!token) return res.status(401).json({ error: "Malformed token" });
 
   try {
-    const decoded = jwt.verify(token, SECRET_KEY); // Use your actual secret key
-    req.user = decoded; // Attach user data
+    const decoded = jwt.verify(token, SECRET_KEY); 
+    req.user = decoded;
     next();
   } catch (error) {
     res.status(401).json({ error: "Invalid token" });
@@ -189,7 +189,7 @@ app.get("/api/search/:search_key", (req, res) => {
       if (err) {
           return res.status(500).json({ error: err.message });
       }
-      res.json(rows); // Send the books list
+      res.json(rows);
   });
 });
 
