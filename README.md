@@ -39,27 +39,28 @@ This will download and install all required packages.
 
 ### 3. Configure the Environment
 
-Create a `.env` file inside the backend directory with the following content (adjust if needed):
+Create a `.env` file inside the backend folder with the following content:
 
 ```env
 SECRET_KEY=your-very-secret-key
 ```
+Replace your-very-secret-key with a secure secret key.
 
 ---
 
 ### 4. Run the Application
 
-### Go back to your terminal, if your terminal is not at root directory do:
+### Return to the root directory (your project directory) if you're not already there:
 ```bash
 cd ..
 ```
 
-#### Run This to launch the website:
+### Start both the frontend and backend servers:
 ```bash
 npm run dev
 ```
 
-This will launch the backend and frontend servers.
+This will simultaneously launch the frontend (localhost:5173) and backend servers.
 
 ---
 
