@@ -18,10 +18,11 @@ cd "path\to\extracted\project"
 ```
 Replace the path with the actual location of the folder.
 
-#### Install dependencies for root:
+#### Install root-level dependencies:
 ```bash
 npm install
 ```
+
 ### Navigate to the `backend` folder and install dependencies:
 ```bash
 cd backend
